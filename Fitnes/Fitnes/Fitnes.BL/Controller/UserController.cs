@@ -19,9 +19,10 @@ namespace Fitnes.BL.Controller
         /// Создание нового контроллера пользователя
         /// </summary>
         /// <param name="user"></param>
-        public UserController(User user)
+        public UserController(string userName, string genderName, DateTime birthDay, double weight, double height)
         {
-            User = user ?? throw new ArgumentNullException("Пользователь не может быть равен null", nameof(user));
+            var gender = new Gender(genderName);
+            User = new User(userName, gender, birthDay, weight, height);
         }
         /// <summary>
         /// Сохранение данных пользователя

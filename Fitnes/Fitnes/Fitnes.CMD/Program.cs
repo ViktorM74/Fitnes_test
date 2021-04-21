@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fitnes.BL.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +13,15 @@ namespace Fitnes.CMD
         {
             Console.WriteLine("Программа Fitnes загружена.");
             Console.WriteLine("Введите имя пользователя:");
+            var name = Console.ReadLine();
+            //if(name.Length <= 1)
+            //{
 
-            if(Console.ReadLine)
+            //}
+            Console.WriteLine("Введите имя пользователя:");
+
+            var user = new User 
+
         }
     }
 }
