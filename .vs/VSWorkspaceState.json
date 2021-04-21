@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Fitnes"
+    "\\Fitnes",
+    "\\Fitnes\\Fitnes"
   ],
-  "SelectedNode": "\\Fitnes",
+  "SelectedNode": "\\Fitnes\\Fitnes\\Fitnes.sln",
   "PreviewInSolutionExplorer": false
 }
