@@ -1,0 +1,6 @@
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.BL\bin\Debug\Fitnes.BL.dll
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.BL\bin\Debug\Fitnes.BL.pdb
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.BL\obj\Debug\Fitnes.BL.csprojAssemblyReference.cache
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.BL\obj\Debug\Fitnes.BL.csproj.CoreCompileInputs.cache
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.BL\obj\Debug\Fitnes.BL.dll
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.BL\obj\Debug\Fitnes.BL.pdb

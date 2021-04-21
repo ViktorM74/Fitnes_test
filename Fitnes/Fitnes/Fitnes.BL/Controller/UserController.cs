@@ -21,6 +21,8 @@ namespace Fitnes.BL.Controller
         /// <param name="user"></param>
         public UserController(string userName, string genderName, DateTime birthDay, double weight, double height)
         {
+           //TODO: Проверка
+
             var gender = new Gender(genderName);
             User = new User(userName, gender, birthDay, weight, height);
         }
