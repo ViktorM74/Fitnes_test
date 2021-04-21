@@ -17,11 +17,11 @@ namespace Fitnes.BL.Model
         /// <summary>
         /// Пол
         /// </summary>
-        public Gender Gender { get; }
+        public Gender Gender { get; set; }
         /// <summary>
         /// Дата рождения
         /// </summary>
-        public DateTime BirthDate { get; }
+        public DateTime BirthDate { get; set; }
         /// <summary>
         /// Вес
         /// </summary>
@@ -30,6 +30,12 @@ namespace Fitnes.BL.Model
        /// Рост
        /// </summary>
         public double Height { get; set; }
+
+        public int Age { get { return DateTime.Now.Year - BirthDate.Year; } }
+        //DateTime nowDate = DateTime.Today;
+        //int age = nowDate.Year - birthDate.Year;
+        //if (birthDate > nowDate.AddYears(-age)) age--;
+
         #endregion
 
         /// <summary>
@@ -79,9 +85,21 @@ namespace Fitnes.BL.Model
             Height = height;
         }
 
+        public User(string name)
+        {
+            #region Проверка условий
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new ArgumentNullException("Имя пользователя не может быть пустым.", nameof(name));
+            }
+
+            #endregion
+            Name = name;
+        }
+
         public override string ToString()
         {
-            return Name;
+            return Name + " Полных лет: " + Age + " Дата рождения: " + BirthDate;
         }
 
 
