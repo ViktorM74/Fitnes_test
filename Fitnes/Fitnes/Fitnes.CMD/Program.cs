@@ -10,6 +10,10 @@ namespace Fitnes.CMD
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Программа Fitnes загружена.");
+            Console.WriteLine("Введите имя пользователя:");
+
+            if(Console.ReadLine)
         }
     }
 }

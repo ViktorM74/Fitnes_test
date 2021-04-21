@@ -5,10 +5,20 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Fitnes.BL.Controller
 {
+    /// <summary>
+    /// Контроллер Пользователя
+    /// </summary>
     public class UserController
     {
+        /// <summary>
+        /// Пользователь
+        /// </summary>
         public User User { get;  }
-
+        
+        /// <summary>
+        /// Создание нового контроллера пользователя
+        /// </summary>
+        /// <param name="user"></param>
         public UserController(User user)
         {
             User = user ?? throw new ArgumentNullException("Пользователь не может быть равен null", nameof(user));
@@ -36,14 +46,7 @@ namespace Fitnes.BL.Controller
 
             using (var fs = new FileStream("users.dat", FileMode.OpenOrCreate))
             {
-                if(formatter.Deserialize(fs) is User user)
-                {
-                    return user;
-                }
-                else
-                {
-                    throw new FileLoadException("Не удалось получить данные из файла", "users.dat");
-                }
+                return formatter.Deserialize(fs) as User;
             }
         }
     }
