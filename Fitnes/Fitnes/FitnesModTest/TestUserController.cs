@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace FitnesModTest.Controller.Test
+namespace FitnesModTest
 {
     [TestClass]
     public class UserControllerTest

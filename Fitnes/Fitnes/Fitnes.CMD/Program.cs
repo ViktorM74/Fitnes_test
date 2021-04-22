@@ -1,4 +1,5 @@
 ﻿using Fitnes.BL.Controller;
+using Fitnes.BL.Model;
 using System;
 
 namespace Fitnes.CMD
@@ -26,8 +27,27 @@ namespace Fitnes.CMD
             }
 
             Console.WriteLine(userController.CurrentUser);
+            Console.WriteLine("Что Вы хотите сделать?");
+            Console.WriteLine("E - ввести прием пищи");
+            var key = Console.ReadKey();
+
+            if(key.Key == ConsoleKey.E)
+            {
+                EnterEating();
+            }
+
             Console.ReadKey();
          }
+
+        private static (Food, double weight) EnterEating()
+        {
+            Console.Write("Введите имя продукта: ");
+            var food = Console.ReadLine();
+
+            var weight = ParseDouble("вес порции");
+
+            return new Food(food, weight);
+        }
 
         private static DateTime ParseDateTime()
         {
@@ -59,7 +79,7 @@ namespace Fitnes.CMD
                 }
                 else
                 {
-                    Console.WriteLine($"Неверный формат {name}");
+                    Console.WriteLine($"Неверный формат поля {name}");
                 }
             }
         }

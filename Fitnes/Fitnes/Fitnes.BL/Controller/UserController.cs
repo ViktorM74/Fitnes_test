@@ -10,8 +10,10 @@ namespace Fitnes.BL.Controller
     /// <summary>
     /// Контроллер Пользователя
     /// </summary>
-    public class UserController
+    public class UserController: ControllerBase
     {
+        private const string USER_FILE = "users.dat";
+
         /// <summary>
         /// Пользователи
         /// </summary>
@@ -51,20 +53,7 @@ namespace Fitnes.BL.Controller
         /// <returns> список пользователей </returns>
         private List<User> GetUserData()
         {
-            var formatter = new BinaryFormatter();
-
-            using (var fs = new FileStream("users.dat", FileMode.OpenOrCreate))
-            {
-                if (fs.Length > 0 && formatter.Deserialize(fs) is List<User> users)
-                {
-                    return users;
-                }
-                else
-                {
-                    return new List<User>();
-                }
-            }
-         
+            return Load<List<User>>(USER_FILE) ?? new List<User>();
         }
 
         public void SetNowUserData(string genderName, DateTime birthDate, double weight = 1, double height = 1)
@@ -78,18 +67,12 @@ namespace Fitnes.BL.Controller
             Save();
         }
 
-            /// <summary>
-            /// Сохранение данных пользователя
-            /// </summary>
-            public void Save()
+        /// <summary>
+        /// Сохранение данных пользователя
+        /// </summary>
+        public void Save()
         {
-            var formatter = new BinaryFormatter();
-
-            using(var fs = new FileStream("users.dat", FileMode.OpenOrCreate))
-            {
-                formatter.Serialize(fs, Users);
-            }
-
+            Save(USER_FILE, Users);
         }
        
        
