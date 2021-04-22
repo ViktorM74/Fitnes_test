@@ -8,3 +8,5 @@ E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\ob
 E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\obj\Debug\Fitnes.CMD.csproj.CopyComplete
 E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\obj\Debug\Fitnes.CMD.exe
 E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\obj\Debug\Fitnes.CMD.pdb
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\bin\Debug\System.ValueTuple.dll
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\bin\Debug\System.ValueTuple.xml
