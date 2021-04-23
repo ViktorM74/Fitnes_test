@@ -10,3 +10,11 @@ E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\ob
 E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\obj\Debug\Fitnes.CMD.pdb
 E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\bin\Debug\System.ValueTuple.dll
 E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\bin\Debug\System.ValueTuple.xml
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\bin\Debug\en-us\Fitnes.CMD.resources.dll
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\bin\Debug\ru-ru\Fitnes.CMD.resources.dll
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\obj\Debug\Fitnes.CMD.Languages.Messages.resources
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\obj\Debug\Fitnes.CMD.Languages.Messages.en-us.resources
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\obj\Debug\Fitnes.CMD.Languages.Messages.ru-ru.resources
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\obj\Debug\Fitnes.CMD.csproj.GenerateResource.cache
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\obj\Debug\en-us\Fitnes.CMD.resources.dll
+E:\OneDrive\Programs\C#\repository\ViktorM74\Lessons\Fitnes\Fitnes\Fitnes.CMD\obj\Debug\ru-ru\Fitnes.CMD.resources.dll

@@ -1,6 +1,8 @@
 ﻿using Fitnes.BL.Controller;
 using Fitnes.BL.Model;
 using System;
+using System.Globalization;
+using System.Resources;
 
 namespace Fitnes.CMD
 {
@@ -8,9 +10,13 @@ namespace Fitnes.CMD
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Программа Fitnes загружена.");
+            var culture = CultureInfo.CreateSpecificCulture(""); // ru-ru; en-us
+            //var culture = CultureInfo.CurrentCulture;
+            ResourceManager resourceManager = new ResourceManager("Fitnes.CMD.Languages.Messages", typeof(Program).Assembly);
+
+            Console.WriteLine(resourceManager.GetString("Hello_Stat", culture));
             
-            Console.WriteLine("Введите имя пользователя:");
+            Console.WriteLine(resourceManager.GetString("Input_User_Name", culture));
             var name = Console.ReadLine();
 
             var userController = new UserController(name);
@@ -18,7 +24,7 @@ namespace Fitnes.CMD
 
             if (userController.IsNewUser)
             {
-                Console.Write("Введите пол: ");
+                Console.Write(resourceManager.GetString("Input_gender", culture));
                 var gender = Console.ReadLine();
                 
                 var birthdate = ParseDateTime();
